@@ -106,12 +106,11 @@ superdown/
 
 如果您有任何问题或建议，欢迎通过以下方式联系我们：
 
-- 提交 [Issue](https://github.com/yourusername/superdown/issues)
-- 发送邮件至 [your-email@example.com](mailto:your-email@example.com)
+2116157050@qq.com
 
 ## 🔄 更新日志
 
-### v1.0.0 (2024-03)
+### v1.0.0 (2025-07)
 
 - ✨ 首次发布
 - 🎉 支持基础的 Markdown 编辑和预览
