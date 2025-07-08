@@ -2,7 +2,7 @@
 
 Superdown 是一个强大的 Markdown 编辑器，支持实时预览和幻灯片演示功能。它基于 Electron 构建，提供了一个现代化的写作和演示环境。
 
-![Superdown Editor](assets/127.png)
+![image](https://github.com/user-attachments/assets/ecbb5eb2-8fe0-45c5-9119-c4951c9d61ed)
 
 ## ✨ 特性
 
