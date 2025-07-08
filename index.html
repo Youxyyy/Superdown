@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Superdown</title>
+    <!-- Reveal.js styles -->
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="reveal-theme">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom app styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <div class="toolbar">
+                <div class="mode-switcher">
+                    <button id="mode-article" class="active">文章模式</button>
+                    <button id="mode-slides">幻灯片模式</button>
+                </div>
+                <div class="formatting-buttons">
+                    <button id="btn-bold" title="粗体 (Ctrl+B)"><i class="fas fa-bold"></i></button>
+                    <button id="btn-italic" title="斜体 (Ctrl+I)"><i class="fas fa-italic"></i></button>
+                    <button id="btn-h1" title="一级标题"><i class="fas fa-heading"></i>1</button>
+                    <button id="btn-h2" title="二级标题"><i class="fas fa-heading"></i>2</button>
+                    <button id="btn-h3" title="三级标题"><i class="fas fa-heading"></i>3</button>
+                    <button id="btn-quote" title="引用"><i class="fas fa-quote-left"></i></button>
+                    <button id="btn-link" title="链接"><i class="fas fa-link"></i></button>
+                    <button id="btn-code" title="代码块"><i class="fas fa-code"></i></button>
+                    <button id="btn-ul" title="无序列表"><i class="fas fa-list-ul"></i></button>
+                    <button id="btn-ol" title="有序列表"><i class="fas fa-list-ol"></i></button>
+                    <button id="btn-strikethrough" title="删除线"><i class="fas fa-strikethrough"></i></button>
+                    <button id="btn-hr" title="水平分割线"><i class="fas fa-minus"></i></button>
+                    <button id="btn-image" title="图片"><i class="fas fa-image"></i></button>
+                </div>
+                <div class="presentation-controls">
+                    <button id="btn-present" title="演示幻灯片"><i class="fas fa-play"></i> 开始演示</button>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea id="editor" placeholder="在此处输入Markdown...\n\n---\n\n用三个短横线来分割您的幻灯片。"></textarea>
+                
+                <!-- Article Preview -->
+                <div id="preview-article" class="preview-pane active"></div>
+
+                <!-- Slides Preview -->
+                <div id="preview-slides" class="preview-pane">
+                    <div class="reveal">
+                        <div class="slides" id="slides-container">
+                            <!-- Slides will be injected here -->
+                        </div>
+                    </div>
+                    <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Scroll</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Presentation Overlay -->
+    <div id="presentation-overlay">
+        <div class="reveal">
+            <div class="slides" id="presentation-slides-container">
+                <!-- Presentation slides will be injected here -->
+            </div>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i></div>
+        <button id="btn-exit-presentation" title="退出演示 (Esc)"><i class="fas fa-times"></i></button>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+</html> 

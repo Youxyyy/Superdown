@@ -1,0 +1,51 @@
+{
+  "name": "superdown",
+  "version": "1.0.0",
+  "description": "A powerful Markdown editor for articles and slides.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "cross-env ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron-builder-binaries/ electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.example.superdown",
+    "productName": "Superdown Editor",
+    "files": [
+      "main.js",
+      "index.html",
+      "style.css",
+      "preload.js",
+      "renderer.js",
+      "node_modules/reveal.js/",
+      "node_modules/marked/"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/127.png"
+    },
+    "mac": {
+      "icon": "assets/127.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [
+    "markdown",
+    "slides",
+    "editor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^15.0.12",
+    "reveal.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3"
+  }
+} 

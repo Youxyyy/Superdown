@@ -1,8 +1,8 @@
 # Superdown
 
 Superdown 是一个强大的 Markdown 编辑器，支持实时预览和幻灯片演示功能。它基于 Electron 构建，提供了一个现代化的写作和演示环境。
-![image](https://github.com/user-attachments/assets/e2d0c2fb-a358-41f5-a3bc-172ffa1c4834)
 
+![Superdown Editor](assets/127.png)
 
 ## ✨ 特性
 
@@ -104,16 +104,18 @@ superdown/
 
 ## 📞 联系方式
 
-如有侵权或者您有任何问题或建议，欢迎通过以下方式联系我们：
-2116157050@qq.com
+如果您有任何问题或建议，欢迎通过以下方式联系我们：
+
+- 提交 [Issue](https://github.com/yourusername/superdown/issues)
+- 发送邮件至 [your-email@example.com](mailto:your-email@example.com)
 
 ## 🔄 更新日志
 
-### v1.0.0 (2025-07)
+### v1.0.0 (2024-03)
 
 - ✨ 首次发布
 - 🎉 支持基础的 Markdown 编辑和预览
 - 🎭 支持文章模式和幻灯片模式
 - 📤 支持导出 PDF 和 Markdown 文件
 - 🛠 添加格式化工具栏
-- 🎨 优化用户界面和交互体验
+- 🎨 优化用户界面和交互体验 
